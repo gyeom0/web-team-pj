@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>한선겸</title>
-  <link rel="shortcut_iocn"
+  <link rel="shortcut_icon"
     href="https://img1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/1eUF/image/LMoXXmD6E9lBwyclusNUYbxOjFY.jpg">
   <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,9 +44,10 @@
       </div>
     </section>
 
-    <!-- like -->
+    <!-- about -->
     <section id="about">
-      <h1 class="title">ABOUT ME</h1>
+      <div class="sticky">
+        <h1 class="title">ABOUT ME</h1>
       <table class="about_cover">
         <td colspan="2">
           <div class="td_name">한 선 겸</div>
@@ -63,7 +64,7 @@
         </tr>
         <tr>
           <td rowspan="2" class="td_p">소속</td>
-          <td><a class="td_link" href="https://www.deu.ac.kr/www/">동의대학교</a></td>
+          <td><a class="td_link" href="https://www.deu.ac.kr/www/" target="_blank">동의대학교</a></td>
         </tr>
         <tr>
           <td>20212870</td>
@@ -73,17 +74,21 @@
           <td>EN-P</td>
         </tr>
         <tr>
-          <td colspan="2"><a href="https://www.instagram.com/faker/"><img class="insta"
+          <td colspan="2"><a href="https://www.instagram.com/faker/" target="_blank"><img class="insta"
                 src="https://i.namu.wiki/i/YwYBFzol-cbFwJFvBOoxKwSvy2k7aSaxeLznamENLkubCNmClf7dCgYWwhiW4EloLB5lbT2kkA3aLQbMPfRTOjA4a2LJs1LKZ8XfyR6flsl61X_bePtQkbHjUkLxPw1sHe-B9ulNHH0kPUwQUnerEg.svg"
                 alt="인스타"></a></td>
         </tr>
       </table>
+      </div>
     </section>
+
+    <!-- like -->
     <section id="like">
       <h1 class="title">MY LIKE</h1>
       <div class="like_cover">
         <div class="like_hobby">
-          <button class="like_icon open_btn" href="#" data-modal-target="modal1"><i class="fa-solid fa-brush fa-3x"></i>
+          <button class="like_icon open_btn" href="#" data-modal-target="modal1">
+            <i class="fa-solid fa-brush fa-3x"></i>
             <p class="lick_click">CLICK ME!</p>
           </button>
         </div>
@@ -109,20 +114,20 @@
       </div>
       <div class="study_info_cover">
         <p class="description">
-          현재 관심있는 내용을 소개합니다
+          html, css, javascript에 관심있습니다!<br>프론트엔드 개발자가 되고싶어요
         </p>
       </div>
       <ul class="majors">
         <li class="major major1">
-          <div class="major_cover"><i class="fa-brands fa-html5 major__icon"></i></div>
+          <div class="major_cover"><i class="fa-brands fa-html5 major__icon"></i><p>html</p></div>
 
         </li>
         <li class="major major2">
-          <div class="major_cover"><i class="fa-brands fa-css3-alt major__icon"></i></div>
+          <div class="major_cover"><i class="fa-brands fa-css3-alt major__icon"></i><p>css</p></div>
 
         </li>
         <li class="major major3">
-          <div class="major_cover"><i class="fa-brands fa-js major__icon"></i></div>
+          <div class="major_cover"><i class="fa-brands fa-js major__icon"></i><p>js</p></div>
         </li>
       </ul>
       <ul class="jobs">
@@ -159,8 +164,8 @@
           </div>
         </div>
       </div>
-      <button class="btn_next">▶</button>
       <button class="btn_prev">◀</button>
+      <button class="btn_next">▶</button>
       <div class="text_cover">
         <p>요즘 좋아하는 취미는 그림그리기!</br>주로 낙서를 하는편. 퀄리티 있는 완성형 그림은 꽂히는게 없다면 선물용으로만 그린다</br>제일 좋아하는건 그림 다그리고 싸인 넣기ㅋㅅㅋ</p>
       </div>
@@ -180,8 +185,8 @@
           </div>
         </div>
       </div>
-      <button class="btn_next">▶</button>
       <button class="btn_prev">◀</button>
+      <button class="btn_next">▶</button>
       <div class="text_cover">
         <p>애니메이션 보는것을 좋아한다.</br>좋아하는 애니가 너무 많아! 최근에 재미있게 보던 진격의 거인이 끝나서 엄청 슬펐다ㅠㅜ 맛있는거 먹으면서 보면 최고다 개인적으로 빽보이 피자 먹으면서 보는
           애니가 제일 재밌다</p>
@@ -199,8 +204,9 @@
             <img class="color" src="/image/color/color3.jpeg" alt="">
           </div>
         </div>
-        <button class="btn_next">▶</button>
         <button class="btn_prev">◀</button>
+        <button class="btn_next">▶</button>
+        
         <div class="text_cover">
           <p>검정색을 제일 좋아한다 </br>옷도 대부분 검은색.. 검은색에 포인트 주는걸 좋아한다 좋아하는 조합은 ⬛️+🟨이거나 ⬛️+🟥</br>비밀인데 엄청 모순됐지만 지금 웹사이트처럼 알록달록
             색도 좋아한다 예쁘기만하면 좋아하는 듯ㅎㅅㅎ
@@ -211,15 +217,16 @@
     <!-- Footer -->
     <footer id="contact" class="section">
       <h2 class="foot_title">Let&#39;s talk</h2>
-      <p class="description">hansk2606@gmail.com</p>
+      
       <ul class="contact__links">
         <li>
-          <a class="contact__link" href="https://github.com/" title="my github link">
+          <a class="contact__link" href="https://github.com/" target="_blank" title="my github link">
             <i class="fa-brands fa-square-github"></i>
           </a>
         </li>
       </ul>
       <p class="end">읽어줘서 고마워!</p>
+      <p class="description">hansk2606@gmail.com</p>
   </div>
   </footer>
   <!-- Arrow up -->

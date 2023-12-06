@@ -75,7 +75,6 @@ button{
 .home_cover{
   display: flex;
   flex-direction: column;
-  margin: 17rem;
 }
 .home_title{
   display: flex;
@@ -91,6 +90,7 @@ button{
   border-radius: 2px;
   width: fit-content;
   margin: auto;
+  margin-bottom: 0.8rem;
 }
 .home_serch_input{
   width: 350px;
@@ -105,13 +105,18 @@ button{
 }
 .nav_cover{
   display: flex;
-  margin: 1rem;
   gap: 17px;
+  justify-content: center;
 }
 
 .nav{
+  padding: 4px 0 4px 0;
+  border-radius: 15px;
   position: sticky;
+  top: 20px;
+  background-color: var(--color-yellow);
 }
+
 .nav_home,.nav_about,.nav_like,.nav_study{
   border: 2px solid var(--color-purple-dark);
   border-radius: 7px;
@@ -266,8 +271,8 @@ p{
 }
 .modal3{
   background-color: var(--color-purple);
-  
 }
+
 .draw,.ani,.color{
   width: 350px;
   height: 350px;
@@ -282,6 +287,11 @@ p{
   justify-content: end;
   padding: 0.9rem 1rem 0.8rem 0;
 }
+.btn_prev,
+.btn_next{
+  font-size: 1.5rem;
+}
+
 .close_btn{
   width: 25px;
   height: 25px;
@@ -333,15 +343,17 @@ p{
 
 .major_cover{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 .major {
   width: 120px;
   height: 120px;
   background-color: var(--color-primary);
   color: var(--color-text);
-  padding: 1rem;
+  padding: 3rem;
   border-radius: 50%;
   cursor: default;
   box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.38);
@@ -394,6 +406,7 @@ p{
   align-items: center;
   gap: 8px;
   margin-left: 2rem ;
+  margin-bottom: 1rem;
 }
 
 .job__name {
@@ -409,15 +422,19 @@ p{
 #contact {
   background-color:#f7e8ad;
 }
+
 .foot_title,.description,.end{
   text-align: center;
+}
+.description{
+  padding-bottom: 2rem;
 }
 
 .contact__links {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  padding: 0.5rem;
+
   font-size: 2rem;
 }
 
@@ -429,12 +446,12 @@ p{
   color:#ff8142;
 }
 .end{
-  padding-bottom: 30px;
+  padding: 0.5rem;
 }
 .foot_title{
   font-size: 4rem;
   margin-bottom: 1rem;
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 .arrow-up {
   opacity: 0;

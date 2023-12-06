@@ -70,6 +70,7 @@ function openModal(modal) {
   modal.style.display = "block";
   document.body.classList.add("modal-open");
   overlay.classList.add("active");
+  hideArrowButton();
 }
 
 // 모달 닫기 함수
@@ -77,6 +78,19 @@ function closeModal(modal) {
   modal.style.display = "none";
   document.body.classList.remove("modal-open");
   overlay.classList.remove("active");
+  showArrowButton();
+}
+
+// arrow-up 버튼 숨기기 함수
+function hideArrowButton() {
+  const arrowButton = document.querySelector(".arrow-up");
+  arrowButton.style.display = "none";
+}
+
+// arrow-up 버튼 보이기 함수
+function showArrowButton() {
+  const arrowButton = document.querySelector(".arrow-up");
+  arrowButton.style.display = "block";
 }
 
 // 모든 닫기 버튼에 이벤트 리스너 추가
