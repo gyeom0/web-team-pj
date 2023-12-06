@@ -21,7 +21,9 @@
 </head>
 
 <body>
+  <div class="overlay"></div>
   <div class="outer">
+    <!-- home -->
     <section id="home">
       <div class="home_cover">
         <h1 class="home_title" id="rainbow-text-container"></h1>
@@ -41,6 +43,8 @@
         </nav>
       </div>
     </section>
+
+    <!-- like -->
     <section id="about">
       <h1 class="title">ABOUT ME</h1>
       <table class="about_cover">
@@ -77,69 +81,154 @@
     </section>
     <section id="like">
       <h1 class="title">MY LIKE</h1>
-      <ul class="like_cover">
-        <li class="like_hobby">
-          <a class="like_icon" href="#"><i class="fa-solid fa-brush fa-3x"></i>
-            <p>그림그리기</p>
-          </a>
-        </li>
-        <li class="like_ani">
-          <a class="like_icon" href="#">
+      <div class="like_cover">
+        <div class="like_hobby">
+          <button class="like_icon open_btn" href="#" data-modal-target="modal1"><i class="fa-solid fa-brush fa-3x"></i>
+            <p class="lick_click">CLICK ME!</p>
+          </button>
+        </div>
+        <div class="like_ani">
+          <button class="like_icon open_btn" href="#" data-modal-target="modal2">
             <i class="fa-solid fa-tablet-screen-button fa-3x"></i>
-            <p>애니메이션</p>
-          </a>
+            <p class="lick_click2">CLICK ME!</p>
+          </button>
+        </div>
+        <div class="like_color">
+          <button class="like_icon open_btn" href="" data-modal-target="modal3">
+            <i class="fa-solid fa-palette fa-3x"></i>
+            <p class="lick_click3">CLICK ME!</p>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- study -->
+    <section id="study" class="section max-container">
+      <div class="study_title_cover">
+        <h2 class="title">Study</h2>
+      </div>
+      <div class="study_info_cover">
+        <p class="description">
+          현재 관심있는 내용을 소개합니다
+        </p>
+      </div>
+      <ul class="majors">
+        <li class="major major1">
+          <div class="major_cover"><i class="fa-brands fa-html5 major__icon"></i></div>
+
         </li>
-        <li class="like_color">
-          <a class="like_icon" href="#"><i class="fa-solid fa-palette fa-3x"></i>
-            <p>좋아하는색</p>
-          </a>
+        <li class="major major2">
+          <div class="major_cover"><i class="fa-brands fa-css3-alt major__icon"></i></div>
+
+        </li>
+        <li class="major major3">
+          <div class="major_cover"><i class="fa-brands fa-js major__icon"></i></div>
+        </li>
+      </ul>
+      <ul class="jobs">
+        <li class="job">
+          <img src="image/study/elephant.png" alt="elephant logo">
+          <div>
+            <p class="job__name">3-2 수강과목</p>
+            <p class="job__period">DB프로그래밍, 웹프로그래밍, 데이터통신</p>
+          </div>
+        </li>
+        <li class="job">
+          <img src="image/study/snail.png" alt="snail logo">
+          <div>
+            <p class="job__name">바이오헬스</p>
+            <p class="job__period">기초의학, 의학용어, 인체의신비</p>
         </li>
       </ul>
     </section>
-    <section id="study">
-    </section>
-    <section id="modal1" class="moadl">
-      <button class="btn_close">X</button>
+
+    <!-- modal -->
+    <section id="modal1" class="modal1 modal" data-modal-target="modal1">
+      <div class="btn_cover"><button class="close_btn" data-modal-close="modal1">X</button></div>
       <h3 class="modal_title">♡✧。°₊·ˈ∗♡∗ˈ‧₊°。✧♡ 취미 ♡✧。°₊·ˈ∗♡∗ˈ‧₊°。✧♡</h3>
       <h4 class="modal_info">그림그리기</h4>
-      <img class="draw_1" src="/image/draw/draw.png" alt="">
-      <img class="draw_2" src="/image/draw/draw1.jpeg" alt="">
-      <img class="draw_3" src="/image/draw/draw2.jpeg" alt="">
-      <img class="draw_4" src="/image/draw/draw3.jpeg" alt="">
-      <img class="draw_5" src="/image/draw/draw4.jpeg" alt="">
-      <img class="draw_6" src="/image/draw/draw5.JPG" alt="">
+      <div class="slide_container">
+        <div class="slide_album">
+          <div class="slide_images">
+            <img class="draw" src="/image/draw/draw.png" alt="">
+            <img class="draw" src="/image/draw/draw1.jpeg" alt="">
+            <img class="draw" src="/image/draw/draw2.jpeg" alt="">
+            <img class="draw" src="/image/draw/draw3.jpeg" alt="">
+            <img class="draw" src="/image/draw/draw4.jpeg" alt="">
+            <img class="draw" src="/image/draw/draw5.JPG" alt="">
+          </div>
+        </div>
+      </div>
       <button class="btn_next">▶</button>
-      <button class="btn-prev">◀</button>
-      <p>요즘 좋아하는 취미는 그림그리기!</br>주로 낙서를 하는편. 퀄리티 있는 완성형 그림은 꽂히는게 없다면 선물용으로만 그린다</br>제일 좋아하는건 그림 다그리고 싸인 넣기ㅋㅅㅋ</p>
+      <button class="btn_prev">◀</button>
+      <div class="text_cover">
+        <p>요즘 좋아하는 취미는 그림그리기!</br>주로 낙서를 하는편. 퀄리티 있는 완성형 그림은 꽂히는게 없다면 선물용으로만 그린다</br>제일 좋아하는건 그림 다그리고 싸인 넣기ㅋㅅㅋ</p>
       </div>
     </section>
-    <section id="modal2" class="moadl">
-      <button class="btn_close">X</button>
-      <h3 class="modal_title">♡✧。°₊·ˈ∗♡∗ˈ‧₊°。✧♡ 애니메이션 ♡✧。°₊·ˈ∗♡∗ˈ‧₊°。✧♡</h3>
-      <h4 class="modal_info">일본 애니메이션</h4>
-      <img src="/image/ani/ani1.jpeg" alt="">
-      <img src="/image/ani/ani2.jpeg" alt="">
-      <img src="/image/ani/ani3.jpeg" alt="">
-      <img src="/image/ani/ani4.jpeg" alt="">
-      <img src="/image/ani/ani5.jpeg" alt="">
+    <section id="modal2" class="modal2 modal" data-modal-target="modal2">
+      <div class="btn_cover"><button class="close_btn" data-modal-close="modal2">X</button></div>
+      <h3 class="modal_title">♡✧。°₊·ˈ∗♡∗ˈ₊°✧♡ 애니메이션 ♡✧°₊ˈ∗♡∗ˈ‧₊°。✧♡</h3>
+      <h4 class="modal_info">맛있는거 먹으면서 애니보기</h4>
+      <div class="slide_container">
+        <div class="slide_album">
+          <div class="slide_images">
+            <img class="ani" src="/image/ani/ani1.jpeg" alt="">
+            <img class="ani" src="/image/ani/ani2.jpeg" alt="">
+            <img class="ani" src="/image/ani/ani3.jpeg" alt="">
+            <img class="ani" src="/image/ani/ani4.jpeg" alt="">
+            <img class="ani" src="/image/ani/ani5.jpeg" alt="">
+          </div>
+        </div>
+      </div>
       <button class="btn_next">▶</button>
-      <button class="btn-prev">◀</button>
-      <p>애니메이션 보는것을 좋아하는데 일본 애니메이션 너무 재밌다</br>좋아하는 애니가 너무 많아! 최근에 재미있게 보던 진격의 거인이 끝나서 엄청 슬펐다ㅠㅜ</p>
+      <button class="btn_prev">◀</button>
+      <div class="text_cover">
+        <p>애니메이션 보는것을 좋아한다.</br>좋아하는 애니가 너무 많아! 최근에 재미있게 보던 진격의 거인이 끝나서 엄청 슬펐다ㅠㅜ 맛있는거 먹으면서 보면 최고다 개인적으로 빽보이 피자 먹으면서 보는
+          애니가 제일 재밌다</p>
       </div>
     </section>
-    <section id="modal3" class="moadl">
-      <button class="btn_close">X</button>
+    <section id="modal3" class="modal3 modal" data-modal-target="modal3">
+      <div class="btn_cover"><button class="close_btn" data-modal-close="modal3">X</button></div>
       <h3 class="modal_title">♡✧。°₊·ˈ∗♡∗ˈ‧₊°。✧♡ 색 ♡✧。°₊·ˈ∗♡∗ˈ‧₊°。✧♡</h3>
       <h4 class="modal_info">검정색</h4>
-      <img src="/image/color/color1.jpeg" alt="">
-      <img src="/image/color/color2.jpeg" alt="">
-      <img src="/image/color/color3.jpeg" alt="">
-      <button class="btn_next">▶</button>
-      <button class="btn-prev">◀</button>
-      <p>검정색을 제일 좋아한다 </br>옷도 대부분이 검은 색밖에 없고, 검은색에 포인트 주는걸 좋아한다</br>비밀인데 엄청 모순됐지만 지금 웹사이트처럼 알록달록 색도 좋아한다 예쁘기만하면 좋아하는 듯ㅎㅅㅎ</p>
+      <div class="slide_container">
+        <div class="slide_album">
+          <div class="slide_images">
+            <img class="color" src="/image/color/color1.jpeg" alt="">
+            <img class="color" src="/image/color/color2.jpeg" alt="">
+            <img class="color" src="/image/color/color3.jpeg" alt="">
+          </div>
+        </div>
+        <button class="btn_next">▶</button>
+        <button class="btn_prev">◀</button>
+        <div class="text_cover">
+          <p>검정색을 제일 좋아한다 </br>옷도 대부분 검은색.. 검은색에 포인트 주는걸 좋아한다 좋아하는 조합은 ⬛️+🟨이거나 ⬛️+🟥</br>비밀인데 엄청 모순됐지만 지금 웹사이트처럼 알록달록
+            색도 좋아한다 예쁘기만하면 좋아하는 듯ㅎㅅㅎ
+          </p>
+        </div>
       </div>
     </section>
+    <!-- Footer -->
+    <footer id="contact" class="section">
+      <h2 class="foot_title">Let&#39;s talk</h2>
+      <p class="description">hansk2606@gmail.com</p>
+      <ul class="contact__links">
+        <li>
+          <a class="contact__link" href="https://github.com/" title="my github link">
+            <i class="fa-brands fa-square-github"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="end">읽어줘서 고마워!</p>
   </div>
+  </footer>
+  <!-- Arrow up -->
+  <aside class="arrow-up">
+    <a class="a" href="#home">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+  </aside>
+
 </body>
 
 </html>
